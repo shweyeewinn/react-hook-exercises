@@ -4,12 +4,13 @@ import './App.css';
 import Counter from './components/Counter';
 import StopWatch from './components/StopWatch';
 import CounterWithCustomHook from './components/CounterWithCustomHook';
+import CounterLocalStorage from './components/CounterStoreValueInLocalStorage';
 
 function App() {
   return (
     <div className="App">
       <div>
-        <h1>Counter</h1>
+        <h1 style={{ color: 'green' }}>Counter</h1>
         <Counter />
       </div>
       <div>
@@ -17,7 +18,15 @@ function App() {
         <CounterWithCustomHook />
       </div>
       <div>
-        <h1>StopWatch</h1>
+        <h1 style={{ color: 'blue' }}>
+          Store Values in localStorage with the React - UseEffect Hook
+        </h1>
+        <CounterLocalStorage />
+      </div>
+      <div>
+        <h1 style={{ color: 'orange' }}>
+          StopWatch - useState, useRef, useEffect Hooks
+        </h1>
         <StopWatch />
       </div>
     </div>
