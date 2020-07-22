@@ -5,16 +5,18 @@ import Counter from './components/Counter';
 import StopWatch from './components/StopWatch';
 import CounterWithCustomHook from './components/CounterWithCustomHook';
 import CounterLocalStorage from './components/CounterStoreValueInLocalStorage';
+import Tilt from './components/Tilt';
+import StopWatchUseReducer from './components/StopWatchUseReducer';
 
 function App() {
   return (
     <div className="App">
       <div>
-        <h1 style={{ color: 'green' }}>Counter</h1>
+        <h1 style={{ color: 'green' }}>Counter - useState</h1>
         <Counter />
       </div>
       <div>
-        <h1 style={{ color: 'red' }}>Counter With Custom Hook</h1>
+        <h1 style={{ color: 'red' }}>Counter - Custom Hook</h1>
         <CounterWithCustomHook />
       </div>
       <div>
@@ -23,11 +25,27 @@ function App() {
         </h1>
         <CounterLocalStorage />
       </div>
+
+      <div>
+        <h1 style={{ color: 'green' }}>
+          Access and Modify a DOM Node with useRef and useEffect Hooks
+        </h1>
+        <Tilt />
+      </div>
+
       <div>
         <h1 style={{ color: 'orange' }}>
-          StopWatch - useState, useRef, useEffect Hooks
+          StopWatch - Interact and Update State in React with useState
         </h1>
         <StopWatch />
+      </div>
+
+      <div>
+        <h1 style={{ color: 'blue' }}>
+          Declaratively Interact with Complex Component State using the
+          useReducer Hook
+        </h1>
+        <StopWatchUseReducer />
       </div>
     </div>
   );
