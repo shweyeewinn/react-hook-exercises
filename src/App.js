@@ -7,6 +7,8 @@ import CounterWithCustomHook from './components/CounterWithCustomHook';
 import CounterLocalStorage from './components/CounterStoreValueInLocalStorage';
 import Tilt from './components/Tilt';
 import StopWatchUseReducer from './components/StopWatchUseReducer';
+import SimplifyStopWatch from './components/StopWatchUseReducer/simplify';
+import StopWatchWithCustomHook from './components/StopWatchUseReducer/customHook';
 
 function App() {
   return (
@@ -46,6 +48,20 @@ function App() {
           useReducer Hook
         </h1>
         <StopWatchUseReducer />
+      </div>
+
+      <div>
+        <h1 style={{ color: 'green' }}>
+          Simplify a Component Reducer with the React setState Hook
+        </h1>
+        <SimplifyStopWatch />
+      </div>
+
+      <div>
+        <h1 style={{ color: 'orange' }}>
+          Share complex logic across React Components with Custom Hooks
+        </h1>
+        <StopWatchWithCustomHook />
       </div>
     </div>
   );
