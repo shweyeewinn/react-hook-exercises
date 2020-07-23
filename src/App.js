@@ -10,6 +10,7 @@ import StopWatchUseReducer from './components/StopWatchUseReducer';
 import SimplifyStopWatch from './components/StopWatchUseReducer/simplify';
 import StopWatchWithCustomHook from './components/StopWatchUseReducer/customHook';
 import Idle from './components/Idle';
+import FormWithUseMemo from './components/FormWithUseMemo';
 
 function App() {
   return (
@@ -70,6 +71,13 @@ function App() {
           Detect user activity with a custom useIdle React Hook
         </h1>
         <Idle />
+      </div>
+
+      <div>
+        <h1 style={{ color: 'black' }}>
+          Prevent Unnecessary Component Rerenders with React memo
+        </h1>
+        <FormWithUseMemo />
       </div>
     </div>
   );
