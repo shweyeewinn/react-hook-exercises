@@ -9,6 +9,7 @@ import Tilt from './components/Tilt';
 import StopWatchUseReducer from './components/StopWatchUseReducer';
 import SimplifyStopWatch from './components/StopWatchUseReducer/simplify';
 import StopWatchWithCustomHook from './components/StopWatchUseReducer/customHook';
+import Idle from './components/Idle';
 
 function App() {
   return (
@@ -62,6 +63,13 @@ function App() {
           Share complex logic across React Components with Custom Hooks
         </h1>
         <StopWatchWithCustomHook />
+      </div>
+
+      <div>
+        <h1 style={{ color: 'black' }}>
+          Detect user activity with a custom useIdle React Hook
+        </h1>
+        <Idle />
       </div>
     </div>
   );
